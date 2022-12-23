@@ -1,0 +1,35 @@
+.static {
+    position: relative;
+    left: 50px;
+}
+
+.animation-success {
+
+    position: relative;
+    animation-name: car;
+    animation-duration: 5s;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+    left: 50px;
+
+}
+
+.animation-fail {
+
+    position: relative;
+    animation-name: car-fail;
+    animation-duration: 3s;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+    left: 50px;
+
+}
+
+@keyframes car {
+    from{left: 50px;}
+    to{left: 815px;}
+}
+@keyframes car-fail {
+    from{left: 50px;}
+    to{left: 400px;}
+}
